@@ -14,6 +14,7 @@ spring:
       hibernate:
 #        show_sql: true #spring boot Guide 확인
         format_sql: true  #spring boot Guide 확인
+        default_batch_fetch_size : 100
 
 logging.level:
   org.hibernate.SQL: debug #hibernate가 생성하는 sql이 보인다(logger를 통해)
